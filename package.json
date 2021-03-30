@@ -1,0 +1,31 @@
+{
+  "name": "yahoo-node-streamer",
+  "version": "1.0.0",
+  "description": "Yahoo finance NodeJS Price Quote Live Streaming - using websocket to collect recent updates",
+  "main": "index.js",
+  "dependencies": {
+    "bytebuffer": "^5.0.1",
+    "protobufjs": "^5.0.1",
+    "socket.io-client": "^4.0.0",
+    "socketio": "^1.0.0",
+    "ws": "^7.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markosole/yahoo-node-streamer.git"
+  },
+  "keywords": [
+    "yahoo",
+    "websocket"
+  ],
+  "author": "marko@reflect.ba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markosole/yahoo-node-streamer/issues"
+  },
+  "homepage": "https://github.com/markosole/yahoo-node-streamer#readme"
+}
