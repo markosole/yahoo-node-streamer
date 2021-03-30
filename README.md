@@ -1,6 +1,7 @@
-# yahoo-node-streamer
+# yahoo-node-streamer - Yahoo Live Quotes
 Yahoo finance NodeJS Price Quote Live Streaming - using websocket to collect recent updates
 
+App is establishing connection to Yahoo Websocket with subscribe command and listens for responses in real time. Yahoo is using protobuf to encode data and we are using protobufjs to decode those messages. Crucial file is PricingData.proto which is used as descriptin for protobufjs. 
 
 # Install
 ```
@@ -21,8 +22,12 @@ Check config and extend the list wit symbols you need:
 connection.send('{"subscribe":["AMC", "TSLA"]}')
 ```
 
-# Received messages decoded example
+# Received messages - decoded example
 
+App will generate object with all data described in .proto file:
+
+
+*** Console log output ***
 ```
 All data set:  {
   id: 'TSLA',
@@ -76,3 +81,12 @@ var useSocket = false;
 ```
 
 Remember to configuer connection to socket server before enabling it. 
+
+# Notes
+App does not provide any historycal data. It is used for live streaming only. 
+App does not require any subscription to Yahoo services and no accounts are used.
+Yahoo does not limit or block any connections (at the moment) to their Websocket server.
+
+
+# To do (in progress and BETA at the moment)
+Electron Desktop application for controlling subscribers list and UI
