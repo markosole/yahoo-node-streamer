@@ -4,6 +4,8 @@ Yahoo finance NodeJS Price Quote Live Streaming - using websocket to collect rec
 App is establishing connection to Yahoo Websocket with subscribe command and listens for responses in real time. Yahoo is using protobuf to encode data and we are using protobufjs to decode those messages. Crucial file is PricingData.proto which is used as descriptin for protobufjs. 
 
 # Install
+
+Clone project and cd into project folder, than run:
 ```
 npm install
 ```
