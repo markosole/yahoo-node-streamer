@@ -12,7 +12,7 @@ npm install
 
 # Run it
 ```
-npm index.js
+node index.js
 ```
 
 # Configuration
