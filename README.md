@@ -15,13 +15,21 @@ npm install
 node index.js
 ```
 
-# Configuration
+# Configuration - Subscribe
 
 For example, app will subscribe to AMC and TSLA symbols. 
 Check config and extend the list wit symbols you need:
 ```
 // Extend this list by adding more symbols ["AMC", "TSLA"]
 connection.send('{"subscribe":["AMC", "TSLA"]}')
+```
+
+# Configuration - Unsubscribe
+
+For example, app will unsubscribe from TSLA symbols.
+```
+// Extend this list by adding more symbols ["AMC", "TSLA", "BB", "BTC-USD"]
+connection.send('{"unsubscribe":["TSLA"]}')
 ```
 
 # Received messages - decoded example
